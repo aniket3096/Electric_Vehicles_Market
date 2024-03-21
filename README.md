@@ -53,7 +53,7 @@ Market size analysis for electric vehicles involves a multi-step process that in
 - Analyze the market size and growth rates for different EV segments.
 - Based on the market size analysis, provide strategic recommendations for businesses looking to enter or expand in the EV market.
 
-#### let’s get started with the task of electric vehicles market size analysis by importing the necessary Python libraries and the dataset:
+#### 1. let’s get started with the task of electric vehicles market size analysis by importing the necessary Python libraries and the dataset:
 ```shell
 import pandas as pd
 ev_data = pd.read_csv('Electric_Vehicle_Population_Data.csv')
@@ -62,14 +62,14 @@ print(ev_data.head())
 
 ![1](https://github.com/aniket3096/Electric_Vehicles_Market/assets/164318183/fe3dd857-7ba5-4c86-929d-11e8613bccf6)
 
-#### let’s clean the dataset before moving forward:
+#### 2. let’s clean the dataset before moving forward:
 ```shell
 ev_data.info()
 ```
 
 ![2](https://github.com/aniket3096/Electric_Vehicles_Market/assets/164318183/ec5b5d05-34c9-4f38-856e-2f71b6ecdeb0)
 
-#### For the task of market size of electric vehicles analysis, we can explore the following areas:
+#### 3. For the task of market size of electric vehicles analysis, we can explore the following areas:
 
 - EV Adoption Over Time: Analyze the growth of the EV population by model year.
 - Geographical Distribution: Understand where EVs are most commonly registered (e.g., by county or city).
@@ -78,7 +78,7 @@ ev_data.info()
 - Electric Range Analysis: Analyze the electric range of vehicles to see how EV technology is progressing.
 - Estimated Growth in Market Size: Analyze and find the estimated growth in the market size of electric vehicles.
 
-#### Let’s start with analyzing the EV Adoption Over Time by visualizing the number of EVs registered by model year. It will give us an insight into how the EV population has grown over the years
+#### 4. Let’s start with analyzing the EV Adoption Over Time by visualizing the number of EVs registered by model year. It will give us an insight into how the EV population has grown over the years
 
 ```shell
 import matplotlib.pyplot as plt
@@ -101,7 +101,7 @@ plt.show()
 
 From the above bar chart, it’s clear that EV adoption has been increasing over time, especially noting a significant upward trend starting around 2016. The number of vehicles registered grows modestly up until that point and then begins to rise more rapidly from 2017 onwards. The year 2023 shows a particularly sharp increase in the number of registered EVs, with the bar for 2023 being the highest on the graph, indicating a peak in EV adoption
 
-#### let’s start by selecting the top 3 counties based on EV registrations and then analyze the distribution of EVs within the cities of those counties
+#### 5. let’s start by selecting the top 3 counties based on EV registrations and then analyze the distribution of EVs within the cities of those counties
 
 ```shell
 # geographical distribution at county level
@@ -141,7 +141,7 @@ The above graph compares the number of electric vehicles registered in various c
 - Overall, the graph indicates that EV adoption is not uniform across the cities and is more concentrated in certain areas, particularly in 
   King County.
 
-#### Next, let’s explore the types of electric vehicles represented in this dataset. Understanding the breakdown between different EV types, such as Battery Electric Vehicles (BEV) and Plug-in Hybrid Electric Vehicles (PHEV), can provide insights into consumer preferences and the adoption patterns of purely electric vs. hybrid electric solutions. So, let’s visualize the distribution of electric vehicle types to see which categories are most popular among the registered vehicles:
+#### 6. Next, let’s explore the types of electric vehicles represented in this dataset. Understanding the breakdown between different EV types, such as Battery Electric Vehicles (BEV) and Plug-in Hybrid Electric Vehicles (PHEV), can provide insights into consumer preferences and the adoption patterns of purely electric vs. hybrid electric solutions. So, let’s visualize the distribution of electric vehicle types to see which categories are most popular among the registered vehicles:
 
 ```shell
 # analyzing the distribution of electric vehicle Types
@@ -160,7 +160,7 @@ plt.show()
 
  The above graph shows that BEVs are more popular or preferred over PHEVs among the electric vehicles registered in the United States.
 
- #### Let’s now focus on the popularity of electric vehicle manufacturers and models among the registered vehicles. This analysis will help us identify which manufacturers and specific models dominate the EV market, potentially indicating consumer preferences, brand loyalty, and the success of various manufacturers’ strategies in promoting electric mobility.
+ #### 7. Let’s now focus on the popularity of electric vehicle manufacturers and models among the registered vehicles. This analysis will help us identify which manufacturers and specific models dominate the EV market, potentially indicating consumer preferences, brand loyalty, and the success of various manufacturers’ strategies in promoting electric mobility.
 
 So, let’s have a look at the most popular manufacturers and then drill down into the most popular models within those manufacturers:
 
@@ -185,7 +185,7 @@ The above chart shows that:
 - NISSAN is the second most popular manufacturer, followed by CHEVROLET, though both have significantly fewer registrations than TESLA.
 - FORD, BMW, KIA, TOYOTA, VOLKSWAGEN, JEEP, and HYUNDAI follow in decreasing order of the number of registered vehicles.
 
-#### Next, let’s drill down into the most popular models within these top manufacturers to get a more detailed understanding of consumer preferences at the model level:
+#### 8. Next, let’s drill down into the most popular models within these top manufacturers to get a more detailed understanding of consumer preferences at the model level:
 
 ```shell
 # selecting the top 3 manufacturers based on the number of vehicles registered
@@ -220,7 +220,7 @@ The above graph shows the distribution of electric vehicle registrations among d
 - CHEVROLET’s BOLT EV and VOLT are the next in the ranking with considerable registrations, followed by BOLT EUV.
 - NISSAN’s ARIYA and CHEVROLET’s SPARK have the least number of registrations among the models shown.
 
-#### Next, we’ll explore the electric range of vehicles, which is a critical factor for analyzing the market size of electric vehicles. The electric range indicates how far an EV can travel on a single charge, and advancements in battery technology have been steadily increasing these ranges over the years. So, let’s look at the distribution of electric ranges in the dataset and identify any notable trends, such as improvements over time or variations between different vehicle types or manufacturers:
+#### 9. Next, we’ll explore the electric range of vehicles, which is a critical factor for analyzing the market size of electric vehicles. The electric range indicates how far an EV can travel on a single charge, and advancements in battery technology have been steadily increasing these ranges over the years. So, let’s look at the distribution of electric ranges in the dataset and identify any notable trends, such as improvements over time or variations between different vehicle types or manufacturers:
 
 ```shell
 # analyzing the distribution of electric range
@@ -248,7 +248,7 @@ The above graph shows the mean electric range. Key observations from the graph i
 - It suggests that while there are EVs available with high electric ranges, the average range is skewed lower due to a substantial 
   number of vehicles with shorter ranges.
 
-#### Now, let’s delve into the trend of electric ranges over model years, which can provide insights into how advancements in battery technology and vehicle design have influenced the electric range capabilities of electric vehicles over time. A positive trend in this analysis would indicate continuous improvements, offering consumers EVs with longer driving ranges and potentially addressing one of the major concerns regarding the EV market (range anxiety)
+#### 10. Now, let’s delve into the trend of electric ranges over model years, which can provide insights into how advancements in battery technology and vehicle design have influenced the electric range capabilities of electric vehicles over time. A positive trend in this analysis would indicate continuous improvements, offering consumers EVs with longer driving ranges and potentially addressing one of the major concerns regarding the EV market (range anxiety)
 
 
 ```shell
@@ -276,7 +276,7 @@ The above graph shows the progression of the average electric range of vehicles 
 - After the sharp decline, there is a slight recovery in the average range in the most recent year shown on the graph.
 The data suggest that while there have been fluctuations, the overall trend over the last two decades has been toward increasing the electric range of EVs.
 
-#### Next, let’s explore how electric ranges vary among the top manufacturers and models. This analysis can reveal how different manufacturers are addressing the crucial aspect of electric range and highlight which models stand out for their superior range capabilities:
+#### 11. Next, let’s explore how electric ranges vary among the top manufacturers and models. This analysis can reveal how different manufacturers are addressing the crucial aspect of electric range and highlight which models stand out for their superior range capabilities:
 
 ```shell
 average_range_by_model = top_makes_data.groupby(['Make', 'Model'])['Electric Range'].mean().sort_values(ascending=False).reset_index()
@@ -302,7 +302,7 @@ plt.show()
   the same maker.
 - NISSAN’s LEAF and CHEVROLET’s SPARK are in the lower half of the chart, suggesting more modest average ranges.
 
-### Estimated Market Size Analysis of Electric Vehicles in the United States
+### $ Estimated Market Size Analysis of Electric Vehicles in the United States
 Now, let’s move forward towards finding the estimated market size of electric vehicles in the United States. I’ll first count the number of EVs registered every year:
 
 ```shell
