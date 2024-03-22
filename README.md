@@ -12,24 +12,10 @@ Market size analysis is a crucial aspect of market research that determines the 
 - Write and run simulations
 
 ## Prerequisites
- If you use `conda`, you can install `NumPy`,`Pandas`,`matplotlib`,`seaborn` from the `defaults` channels:
- 
-### conda
-```shell
-conda install numpy
-```
-```shell
-conda create --name myenv python=3.12.1
-```
-```shell
-conda install matplotlib
-```
-```shell
-conda install seaborn
-```
+
 
 ### PyPI
-If you use pip, you can install `NumPy`,`Pandas`,`matplotlib`,`seaborn` with:
+using pip, you can install `NumPy`,`Pandas`,`matplotlib`,`seaborn` with:
 ```shell
 pip install numpy
 ```
